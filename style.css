@@ -663,7 +663,7 @@ nav ul a:hover {
 }
 
 .left img {
-  width: 350px;
+  width: 450px;
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -692,6 +692,7 @@ form label {
 
 form input,
 form textarea {
+   background-color:#B6AE9F;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
