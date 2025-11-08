@@ -1,25 +1,52 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* ===================================
+   🌐 GLOBAL STYLES
+=================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  /*font-family: "Epunda Sans", sans-serif;*/
   font-family: 'Poppins', sans-serif;
-  
-}
-/*HEADER**/
-.page{
-    background-color: rgb(117, 117, 157);
+  background-color: rgb(117, 117, 157);
+  color: #000;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
-header{
-    text-align: center;
-   
+ul {
+  list-style: none;
+}
+
+/* ===================================
+   🧭 HEADER & NAVIGATION
+=================================== */
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(31, 29, 29, 0.5);
+  box-shadow: 2px 0 2px 2px rgb(47, 46, 46);
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+nav h2 {
+  margin-left: 10px;
 }
 
 nav ul {
+<<<<<<< HEAD
     list-style: none;
     display: flex;
     margin: 10px;
@@ -31,9 +58,8 @@ ul{
   
 }
 ul a{
-    font-weight: 700;
+    font-weight: 600;
     color:rgb(6, 6, 6);
-    font-size: 19px;
     margin-right: 20px;
     font-size: 18px;
 }
@@ -97,7 +123,7 @@ h3 {
     }
     .pro{
         width:25%;
-        height: 700px;
+        
         font-size: 16px;
        /* overflow: scroll;*/
 
@@ -118,9 +144,26 @@ h3 {
     }
 }
 @media (max-width:700px){
-    
+    #hi{
+        display:none;
+    }
+    /*#bar{
+        display:block;
+    }*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-title h2{
+        margin-top: 30px;
+    }
+     footer ul{
+        flex-direction: column;
+    };
     nav ul li a{
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: 400;
         margin-right: 5px;
     }
     .project-list{
@@ -131,7 +174,7 @@ h3 {
         font-size: 16px;
         width: 100%;
     }
-   
+    
     .boxes{
         flex-direction: column;
     }
@@ -193,11 +236,19 @@ h3 {
         margin-top: 10px;
     }
     nav{
-        height:300px;
+        height:150px;
+    }
+    nav ul a{
+        font-weight: 100;
     }
     .about-image img{
         height:100px;
     }
+    .info img{
+        margin-top: 150px;
+    }
+   
+
 }
 
 
@@ -219,10 +270,15 @@ footer h4{
 }
 
 /*HOME PAGE*/
+#bar{
+    margin-right: 50px;
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-    height:80px;
+    /*height:80px;*/
     align-items:center ;
     position: fixed;
     width:100%;
@@ -231,6 +287,7 @@ nav{
     box-shadow: 2px 0 2px 2px rgb(47, 46, 46);
     z-index: 1000;
 }
+
 ul a:hover{
     color: cadetblue;
 }
@@ -243,9 +300,9 @@ nav h2{
     text-align: center;
 }
 .info img{
-    margin-top: 90px;
-    width: 50%;
-    height:60%;
+    margin-top: 150px;
+    width: 45%;
+    height:35%;
    align-self: center;
 }
 /*PROJECT SECTION*/
@@ -266,7 +323,7 @@ nav h2{
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    height: 100%;
+    
 }
 .projects h2{
     text-align: center;
@@ -298,7 +355,7 @@ nav h2{
 .pro h2{
     background-color: rgb(199, 169, 227);
    margin: 0;
-   height: 130px;
+  /* height: 130px;*/
    margin:10px;
    padding: 10px;
    margin-bottom: 10px;
@@ -315,6 +372,10 @@ nav h2{
     transition: transform 1s ease;
 
 }
+.pro:hover h2{
+    background-color: black;
+    color: white;
+} 
 /*INFO SECTION*/
 
 .education{
@@ -339,143 +400,450 @@ nav h2{
 }
 .boxes{
   
+=======
+>>>>>>> e163c8f (Style:Created reponsive design)
   display: flex;
+  margin: 10px;
+}
+
+nav ul a {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(6, 6, 6);
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+  color: cadetblue;
+}
+
+#hi {
+  height: 85px;
+  width: 100px;
+}
+
+/* Active Highlight */
+.highlight {
+  color: cadetblue;
+}
+
+/* ===================================
+   🏠 HOME / HERO SECTION
+=================================== */
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info img {
+  margin-top: 150px;
+  width: 45%;
+  height: 35%;
+  align-self: center;
+}
+
+.view h2 i {
+  font-style: italic;
+}
+
+/* ===================================
+   💻 PROJECTS SECTION
+=================================== */
+
+/*.projects {
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#pro-head {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.pro {
+  background-color: white;
+  box-shadow: 1px 2px 8px 2px rgb(47, 46, 46);
+  border-radius: 9px;
+  overflow: hidden;
+  height: 400px;
+  margin-right: 50px;
+  transition: transform 1s ease;
+}
+
+.pro:hover {
+  transform: scale(1.05);
+}
+
+.pro h2 {
+  background-color: rgb(199, 169, 227);
+  margin: 10px;
+  padding: 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.pro:hover h2 {
+  background-color: black;
+  color: white;
+}
+
+.pro p {
+  padding: 10px;
+}
+
+
+*/
+
+
+
+/* === Projects Section === */
+#projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #0078ff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+  }
+}
+
+/* ===================================
+   👩‍🎓 ABOUT ME SECTION
+=================================== */
+.education {
+  padding: 15px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-weight: 700;
+}
+
+.about-content {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.info-list {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  box-shadow: 2px 2px 10px 2px white;
+  animation: light 1.8s ease infinite;
+}
+
+/* ===================================
+   🧾 CERTIFICATES SECTION
+=================================== */
+#certificate {
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
   margin: 40px;
-  
-}
-.section-title h2{
-    font-weight: 700;
+  font-size: 16px;
 }
 
-.box{
-    padding: 20px;
-    height: 30%;
-    border-radius: 30px;
-    margin: 10px;
-    box-shadow: 1px 2px 2px 0px;
-    margin-top: 100px;
-    background-color: white;
-}
-.boxes{
-        font-size: 16px;
-
-    }
-    .box{
-        height: min-content;
-    }
-
-.box:hover{
-    transform: scale(1.05);
-    transition: transform 1s ease;
+.box {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: 1px 2px 2px 0px;
+  transition: transform 1s ease;
 }
 
-/*CONTACT-PAGE*/
-
-.contact{
-    background-color: blanchedalmond;
-    padding: 30px;
-    flex-wrap: wrap;
-    
-    height:100vh;
-    
+.box:hover {
+  transform: scale(1.05);
 }
 
-.contact2{
-    text-align: center;
-    margin-bottom: 25px;
+/* ===================================
+   📩 CONTACT SECTION
+=================================== */
+.contact {
+  background-color: blanchedalmond;
+  padding: 30px;
+  height: 100vh;
+  text-align: center;
+ 
 }
-.contact2 h3{
-    font-weight: 900;
-    font-size:40px;
+
+/*.contact2 {
+  margin-bottom: 25px;
+}*/
+
+.contact2 h2 {
+  font-size: 40px;
+  font-weight: 900;
 }
-.contact1{
-    display: flex;
-    
-    width: 100%;
+
+.contact1 {
+    height: 100%;
+  display: flex;
+  justify-content: space-around
+}
+
+.left, .right {
+  height: 80%;
+  width: 42%;
+ 
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
 }
 .right{
     height: 100%;
 }
-
-form{
-     margin-top: 20px;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-   
-}
-form input{
-    border-radius: 9px;
-    height:40px;
-    width:100%;
-    border:none
-}
-#send{
-    height: 40px;
-    background-color:rgb(141, 141, 206);
-    box-shadow: 10px 2px 10px black;
-    margin-top: 10px;
-   color: white;
-    font-size: large;
-   
-}
-textarea{
-    width: 100%;
-    height:100px;
-    border: none;
-   border-radius: 9px;
-   margin-top: 10px;
-}
-form{
-    text-align: left;
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 20px;
+  gap: 10px;
+  height: 100%;
 }
 
-.right input{
-    padding-left: 10px;
-    font-size: 17px;
-    color: black;
+form input,
+textarea {
+  border: none;
+  width: 100%;
+  border-radius: 9px;
+  padding: 10px;
+  font-size: 17px;
+  color: black;
 }
 
-.btn{
-    display: flex;
-    background-color: black;
-    width: 200px;
-    height:45px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    border-radius: 9px;
-    box-shadow: 2px 2px 10px 2px white;
-    animation: light 1.8s ease infinite;
+textarea {
+  height: 100px;
 }
 
-
-.right {
-    width: 100%;
-    
-}
-.left{
-    width:100%;
-}
-.left img{
-    width:90%;
-    height: 100%;
-   
+#send {
+  height: 40px;
+  background-color: rgb(141, 141, 206);
+  color: white;
+  font-size: large;
+  box-shadow: 10px 2px 10px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/*ABOUT SECTION*/
-.about-content{
-    color: black;
+#send:hover {
+  transform: scale(1.05);
 }
 
-/*FOOTER SECTION*/
+/* ===================================
+   🦶 FOOTER
+=================================== */
+footer {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+<<<<<<< HEAD
 footer{
+    padding-top: 30px;
+    margin: 0;
+    /*display: flex;
+    flex-direction: column;*/
     text-align: center;
+    /*background-color: #0C2B4E;*/
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+=======
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+>>>>>>> e163c8f (Style:Created reponsive design)
+
+footer ul a {
+  font-weight: 300;
+  margin: 0 10px;
 }
 
+footer h4 {
+  color: black;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 22px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: lime;
+}
+
+/* ===================================
+   ✨ ANIMATIONS
+=================================== */
+@keyframes light {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07) translateX(-5px); }
+  100% { transform: scale(1); }
+}
+
+/* ===================================
+   📱 RESPONSIVE DESIGN
+=================================== */
+@media (max-width: 1124px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pro {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  h2 #hi { display: none; }
+  nav{
+    justify-content: center;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  nav ul a {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+  .boxes{
+    flex-direction: column;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  .info img {
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  .contact1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input,
+  textarea,
+  #send {
+    width: 100%;
+  }
+  
+  .right{
+    width: 100%;
+    height: 100%;
+  }
+}
+<<<<<<< HEAD
 /*COLOR CHANGE*/
 .highlight{
     color: cadetblue;
 }
+=======
+>>>>>>> e163c8f (Style:Created reponsive design)
