@@ -784,6 +784,9 @@ footer h4 {
 }
 
 @media (max-width: 700px) {
+       .left {
+        height: 30%;
+    }
   h2 #hi { display: none; }
   nav{
     justify-content: center;
