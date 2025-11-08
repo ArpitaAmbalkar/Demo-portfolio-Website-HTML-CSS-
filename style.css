@@ -96,9 +96,7 @@ h3{
     text-align: center;
 }
 
-.right img{
-   width:50%;
-}
+
 
 
 
@@ -704,7 +702,9 @@ textarea {
 #send:hover {
   transform: scale(1.05);
 }
-
+.right img{
+   width:50%;
+}
 /* ===================================
    🦶 FOOTER
 =================================== */
