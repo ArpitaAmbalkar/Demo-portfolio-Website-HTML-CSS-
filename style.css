@@ -652,15 +652,12 @@ nav ul a:hover {
 
 .contact1 {
     height: 100%;
+   width:100%;
   display: flex;
   justify-content: space-around
 }
 
-.left, .right {
-  height: 80%;
-  width: 42%;
- 
-}
+
 
 .left img {
   width: 100%;
