@@ -25,14 +25,26 @@ tabs.forEach((tab, index) => {
 /*INTRO*/
 
 
-const text = "Frontend Developer";
+const text = "Hi ! I am Arpita Frontend Developer✨";
 let i = 0;
 function typeWriter(){
   if(i < text.length){
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeWriter, 150);
+    setTimeout(typeWriter, 100);
   }
 }
 typeWriter();
 
+
+/*FOR THE GET IN TOUCH BTN*/
+
+function scrollToContact() {
+    window.scrollTo({
+        top: document.getElementById("contact").offsetTop,
+        behavior: "smooth"
+    });
+}
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}

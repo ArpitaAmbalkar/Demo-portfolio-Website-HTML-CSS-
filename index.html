@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/jpg" href="https://media.istockphoto.com/id/668023344/vector/letter-abstract-icon-black-and-white-icon.jpg?s=612x612&w=0&k=20&c=dpdM3qQpijgWP6TZDbMTug6LHjGKQxenwrDcRR7IJiE=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <style>
@@ -24,7 +25,7 @@
     <nav>
         
         <h2><img src="https://media.tenor.com/3A9WPFDKBhQAAAAm/beautiful.webp" id="hi"></h2>
-            <ul>
+             <ul class="nav-links" id="navLinks">
                 <li><a href="header" class="highlight">Home </a></li>
                 <li><a href="#projects">Projects </a></li>
                 <li><a href="#info">About me</a></li>
@@ -49,26 +50,39 @@
         <section id="projects">
   <h2>My Projects</h2>
   <div class="projects-container">
+    <div class="project-card">
+  <h3>🌿 Farm Weather Website</h3>
+  <p>A responsive website that shows information about a farmer products and location. Helping to connect with Merchant</p>
+  <a href="https://github.com/ArpitaAmbalkar" target="_blank" class="project-link">
+     <i class="fa-brands fa-github"></i> Code
+    </a>
+
+    <a href="https://sureshambalkar.netlify.app/" target="_blank" class="project-link">
+      <i class="fa-solid fa-rocket"></i> Live Demo
+    </a>
+</div>
 
     <div class="project-card">
       <h3>🌤 Weather Card</h3>
       <p>A simple weather information card built using HTML, CSS that shows temperature, humidity, and location details.</p>
+      <i class="fab fa-github"></i><a href="https://github.com/ArpitaAmbalkar/Weather-App" target="_blank">Code</a>
     </div>
 
     <div class="project-card">
       <h3>💬 Testimonial Card</h3>
       <p>Designed a modern testimonial card layout using HTML and CSS with shadow effects and smooth hover transitions for portfolio websites.</p>
+      <i class="fab fa-github"></i><a href="https://github.com/ArpitaAmbalkar" target="_blank">Code</a>
     </div>
 
     <div class="project-card">
       <h3>🎨 Personal Portfolio</h3>
       <p>Developed a responsive portfolio website with navigation, about section, projects, and contact form using pure HTML and CSS.</p>
+      <i class="fab fa-github"></i><a href="https://github.com/ArpitaAmbalkar/Demo-portfolio-Website-HTML-CSS-" target="_blank">Code</a>
+      <a href="index.html" class="project-link">
+      <i class="fa-solid fa-rocket"></i> Live Demo
+    </a>
     </div>
 
-    <div class="project-card">
-      <h3>🧮 Calculator App</h3>
-      <p>Created a functional calculator using HTML, CSS, and JavaScript that performs basic arithmetic operations.</p>
-    </div>
 
   </div>
 </section>
@@ -95,10 +109,7 @@
                             <span class="info-label">Email:</span>
                             <span class="info-value">arpitaambalkar26@gmail.com</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Phone:</span>
-                            <span class="info-value">+91 9049525897</span>
-                        </div>
+            
                         <div class="info-item">
                             <span class="info-label">Location:</span>
                             <span class="info-value">Pune, Maharashtra</span>
@@ -119,14 +130,21 @@
     <div class="boxes" >
         
         <div class="box">
-            <h3>➤C++ Certificate</h3>
-            <p>Certified by HackerRank for successfully completing the C++ programming course, covering concepts like OOP, STL, and file handling.</p>
+            <h3>➤C++ 5 star (HackerRank)</h3>
+            <p>Certified by HackerRank for successfully solving the C++ programming problems, covering concepts like OOP, and STL.</p>
+            <a href="https://your-certificate-link.com" target="_blank">
+  View Certificate
+</a>
+
         </div>
         <div class="box">
             <h3>➤SQL Certificate</h3>
             <p>
-      Completed SQL certification focusing on relational database concepts, CRUD operations, and query optimization using MySQL.
+      Completed SQL certification focusing on relational database concepts and query optimization using MySQL.
     <p>
+        <a href="https://your-certificate-link.com" target="_blank">
+  View Certificate
+</a>
   </div>
 
         <div class="box">
@@ -134,6 +152,9 @@
             <p>
       Earned certification for completing the Python basics course, learning core programming logic, loops, functions, and data structures.
             </p>
+            <a href="HACKERRANK_PYTHON_CERTIFICATE.png" target="_blank">
+  View Certificate
+</a>
   </div>
     </div>
     </div>
@@ -148,21 +169,27 @@
             <img src="https://static.vecteezy.com/system/resources/thumbnails/008/516/784/small/developer-coding-website-illustration-concept-vector.jpg">
         </div>
         <div class="right">
-            <form>
-                <label>Name : <input type="name" placeholder="Name"></label>
-                <label>Email : <input type="email" required></label>
-                <label>Enter your query : <textarea required></textarea></label>
-                <input type="submit" value="Send Email" id="send">
-            </form>
+            <form action="https://formsubmit.co/arpitaambalkar26@gmail.com" method="POST">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Your same input fields (unchanged) -->
+    <label>Name : <input type="name" name="name"></label>
+    <label>Email : <input type="email" name="email" required></label>
+    <label>Enter your query : <textarea name="message" required></textarea></label>
+
+    <input type="submit" value="Send Email" id="send">
+</form>
+
         </div>
         </div>
 </div>
 <footer>
     <div class="social-icons">
-  <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-  <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/its_.arpitaa?igsh=MXg5MzZsY3ppNmR4Mw==" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/arpita-ambalkar-47775b252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/ArpitaAmbalkar" target="_blank"><i class="fab fa-github"></i></a>
 </div>
 
     <ul>

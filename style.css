@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -144,9 +147,7 @@ h3{
     }
 }
 @media (max-width:700px){
-    #hi{
-        display:none;
-    }
+    
     /*#bar{
         display:block;
     }*/
@@ -503,6 +504,12 @@ nav ul a:hover {
 
 
 /* === Projects Section === */
+
+.project-card a, .project-card i{
+  color: #0078ff;
+  padding-left: 5px;
+  font-size: 16px;
+}
 #projects {
   padding: 60px 20px;
   text-align: center;
@@ -539,6 +546,7 @@ nav ul a:hover {
 .project-card h3 {
   margin-bottom: 10px;
   color: #0078ff;
+  color: black;
 }
 
 .project-card p {
@@ -579,7 +587,8 @@ nav ul a:hover {
 }
 
 .about-image img {
-  width: 100%;
+  height: 50%;
+  width: 60%;
   max-width: 600px;
 }
 
@@ -604,6 +613,18 @@ nav ul a:hover {
 /* ===================================
    🧾 CERTIFICATES SECTION
 =================================== */
+.box a{
+  color: #0078ff;
+  background-color: rgb(240, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:35px;
+  justify-self: center;
+  align-items: center;
+  border-radius: 9px;
+  width:140px;
+}
 #certificate {
   margin-top: 50px;
   font-weight: 700;
@@ -849,9 +870,6 @@ footer h4 {
   transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: lime;
-}
 /*EDITED*/
 
 .social-icons {
@@ -868,7 +886,7 @@ footer h4 {
 }
 
 .social-icons a:hover {
-  color: #ff6600;
+  color: #1C352D;
 }
 /*EDITED*/
 
@@ -958,4 +976,6 @@ footer h4 {
 .highlight{
     color: cadetblue;
 }
+
+/*FOR THE BAR FOR RESPONSIVE DESIGN*/
 
