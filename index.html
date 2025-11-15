@@ -25,7 +25,7 @@
         
         <h2><img src="https://media.tenor.com/3A9WPFDKBhQAAAAm/beautiful.webp" id="hi"></h2>
             <ul>
-                <li><a href="index.html">Home </a></li>
+                <li><a href="header" class="highlight">Home </a></li>
                 <li><a href="#projects">Projects </a></li>
                 <li><a href="#info">About me</a></li>
                 <li><a href="#article">Certificates </a></li>
@@ -39,7 +39,7 @@
        
         <img src="https://cdni.iconscout.com/illustration/premium/thumb/web-developer-working-on-computer-illustration-svg-download-png-5307342.png">
              <div class="view">
-                <h2><i>Frontend Developer</i></h2>
+                <h2 id="typing"></h2>
                 <p>Welcome to My Web Design Project</p>
                 
         </div>
@@ -175,21 +175,7 @@
             </ul>
     <h4>&copy; All rights reserved 2025</h4>
 </footer>
-<script>
-     let tabs = document.querySelectorAll("ul a");
-
-tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-    // 1️⃣ Remove highlight + active from all
-    
-    tabs.forEach(t => t.classList.remove("highlight"));
-   
-
-    // 2️⃣ Add to clicked one
-
-    tab.classList.add("highlight");
-  });
-});
+<script src="script.js">
 
 </script>
 </body>

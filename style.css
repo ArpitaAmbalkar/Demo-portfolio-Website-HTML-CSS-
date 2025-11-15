@@ -46,7 +46,7 @@ nav h2 {
 }
 
 nav ul {
-<<<<<<< HEAD
+
     list-style: none;
     display: flex;
     margin: 10px;
@@ -95,7 +95,10 @@ h3{
     margin: 0;
     text-align: center;
 }
-
+#typing{
+  font-weight: 600;
+  color:#FFECC0;
+}
 
 
 
@@ -267,6 +270,7 @@ footer h4{
 }
 
 /*HOME PAGE*/
+
 #bar{
     margin-right: 50px;
     display: none;
@@ -296,12 +300,7 @@ nav h2{
     
     text-align: center;
 }
-.info img{
-    margin-top: 150px;
-    width: 45%;
-    height:35%;
-   align-self: center;
-}
+
 /*PROJECT SECTION*/
 
 .projects li{
@@ -435,8 +434,8 @@ nav ul a:hover {
 
 .info img {
   margin-top: 150px;
-  width: 45%;
-  height: 35%;
+  width: 42%;
+    height: 32%;
   align-self: center;
 }
 
@@ -819,7 +818,7 @@ footer {
   text-align: center;
 }
 
-<<<<<<< HEAD
+
 footer{
     padding-top: 30px;
     margin: 0;
@@ -832,13 +831,7 @@ footer ul{
     display: flex;
 
     justify-content: center;
-=======
-footer ul {
-  display: flex;
-  justify-content: center;
-
 }
->>>>>>> e163c8f (Style:Created reponsive design)
 
 footer ul a {
   font-weight: 300;
@@ -960,10 +953,9 @@ footer h4 {
     height: 100%;
   }
 }
-<<<<<<< HEAD
+
 /*COLOR CHANGE*/
 .highlight{
     color: cadetblue;
 }
-=======
->>>>>>> e163c8f (Style:Created reponsive design)
+
