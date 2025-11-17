@@ -28,21 +28,17 @@ ul {
 /* ===================================
    🧭 HEADER & NAVIGATION
 =================================== */
+
+/*BUTTON TOGGLE */
+#toggle-btn{
+  display: none;
+}
+
+
 header {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  background-color: rgba(31, 29, 29, 0.5);
-  box-shadow: 2px 0 2px 2px rgb(47, 46, 46);
-  z-index: 1000;
-  padding: 10px 20px;
-}
 
 nav h2 {
   margin-left: 10px;
@@ -151,11 +147,7 @@ h3{
     /*#bar{
         display:block;
     }*/
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        
-    }
+
     .section-title h2{
         margin-top: 30px;
     }
@@ -178,13 +170,6 @@ h3{
     
     .boxes{
         flex-direction: column;
-    }
-
-    nav{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-       align-items: center;
     }
     .view{
         width: 100%;
@@ -236,9 +221,7 @@ h3{
         font-size: 16px;
         margin-top: 10px;
     }
-    nav{
-        height:150px;
-    }
+  
     nav ul a{
         font-weight: 100;
     }
@@ -249,6 +232,10 @@ h3{
         margin-top: 150px;
     }
    
+
+ 
+
+    /*END*/
 
 }
 
@@ -979,3 +966,89 @@ footer h4 {
 
 /*FOR THE BAR FOR RESPONSIVE DESIGN*/
 
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  color: white;
+}
+.side-nav.active {
+  top: 0;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav.menu-open {
+    top: 0;                    /* Slide down */
+  }
+#cross { display: none; }
+nav.menu-open #bar { display: none; }
+nav.menu-open #cross { display: block; }
+@media (max-width:700px)
+{
+ 
+  .menu-toggle{
+    display:block;
+  }
+  nav {
+    width: 100%;
+    height: 30vh;
+    
+    position: fixed;
+    top: -27vh;                /* Hidden above */
+    left: 0;
+    transition: top 0.4s ease; /* Slide animation */
+    z-index: 999;
+  }
+
+  nav.menu-open {
+    top: 0;                    /* Slide down */
+  }
+
+  .nav-links {
+    list-style: none;
+    padding: 30px 20px;
+    color: white;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* TOGGLE BUTTON */
+  #toggle-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  #cross { display: none; }
+
+  nav.menu-open ~ #toggle-btn #bar {
+    display: none;
+  }
+
+  nav.menu-open ~ #toggle-btn #cross {
+    display: inline;
+  }
+}

@@ -1,3 +1,8 @@
+
+
+//ENDED HERE
+
+
 document.querySelectorAll('nav ul li a').forEach(link => {
   link.addEventListener('click', function(e){
     e.preventDefault();
@@ -48,3 +53,18 @@ function scrollToContact() {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
+/*START*/
+
+const sideNav = document.getElementById("sideNav");
+const menuToggle = document.getElementById("menuToggle");
+
+menuToggle.addEventListener("click", () => {
+    sideNav.classList.toggle("menu-open");
+
+    // Toggle between ☰ and ✖
+    if (sideNav.classList.contains("menu-open")) {
+        menuToggle.textContent = "✖";
+    } else {
+        menuToggle.textContent = "☰";
+    }
+});
